@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bygg & Form | Byggfirma i Örebro</title>
+    <meta name="description" content="Bygg & Form erbjuder renovering, tillbyggnad, altaner, fasadarbeten och andra byggtjänster i Örebro med omnejd.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #212529;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.35rem;
+        }
+
+        .hero {
+            min-height: 75vh;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+                url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=80")
+                center/cover no-repeat;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            color: #6c757d;
+        }
+
+        .service-card {
+            height: 100%;
+            border: 0;
+            border-radius: 12px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+
+        .service-icon {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #f1f3f5;
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .reference-card {
+            overflow: hidden;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        .reference-card img {
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .contact-section {
+            background: #f8f9fa;
+        }
+
+        .contact-box {
+            border-radius: 12px;
+            border: 0;
+        }
+
+        footer {
+            background: #212529;
+            color: #fff;
+        }
+
+        footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+    <div class="container">
+
+        <a class="navbar-brand text-dark" href="#hem">
+            <i class="bi bi-building"></i>
+            Bygg & Form
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Visa meny">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#hem">Hem</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#tjanster">Tjänster</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#om-oss">Om oss</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#referenser">Referenser</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontakt">Kontakt</a>
+                </li>
+
+            </ul>
+
+            <a href="#kontakt" class="btn btn-dark ms-lg-3 mt-3 mt-lg-0">
+                Begär offert
+            </a>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<header id="hem" class="hero text-white">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8">
+
+                <p class="lead mb-3">
+                    BYGG • RENOVERING • SNICKERI
+                </p>
+
+                <h1 class="mb-4">
+                    Vi bygger för framtiden
+                </h1>
+
+                <p class="lead mb-4">
+                    Professionellt hantverk för privatpersoner och företag.
+                    Från mindre renoveringar till kompletta byggprojekt.
+                </p>
+
+                <a href="#kontakt" class="btn btn-light btn-lg me-2">
+                    Begär kostnadsfri offert
+                </a>
+
+                <a href="#tjanster" class="btn btn-outline-light btn-lg">
+                    Våra tjänster
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- TJÄNSTER -->
+<section id="tjanster" class="section-padding">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <h2 class="section-title">
+                Våra tjänster
+            </h2>
+
+            <p class="section-intro">
+                Vi hjälper dig med både små och stora byggprojekt.
+                Med noggrant hantverk och tydlig kommunikation skapar vi
+                resultat som håller över tid.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Tjänst 1 -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card service-card shadow-sm p-4">
+
+                    <div class="service-icon">
+                        <i class="bi bi-house"></i>
+                    </div>
+
+                    <h3 class="h5">
+                        Renovering
+                    </h3>
+
+                    <p class="text-muted">
+                        Vi renoverar kök, vardagsrum, sovrum och andra delar
+                        av ditt hem med fokus på kvalitet och funktion.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tjänst 2 -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card service-card shadow-sm p-4">
+
+                    <div class="service-icon">
+                        <i class="bi bi-houses"></i>
+                    </div>
+
+                    <h3 class="h5">
+                        Tillbyggnad
+                    </h3>
+
+                    <p class="text-muted">
+                        Behöver du mer plats? Vi hjälper dig med tillbyggnader
+                        som passar både huset och dina behov.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tjänst 3 -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card service-card shadow-sm p-4">
+
+                    <div class="service-icon">
+                        <i class="bi bi-tree"></i>
+                    </div>
+
+                    <h3 class="h5">
+                        Altan & uterum
+                    </h3>
+
+                    <p class="text-muted">
+                        Skapa en härlig uteplats med en ny altan, veranda
+                        eller ett funktionellt uterum.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tjänst 4 -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card service-card shadow-sm p-4">
+
+                    <div class="service-icon">
+                        <i class="bi bi-bricks"></i>
+                    </div>
+
+                    <h3 class="h5">
+                        Fasad & tak
+                    </h3>
+
+                    <p class="text-muted">
+                        Vi hjälper till med renovering och underhåll av fasader,
+                        tak och andra delar av byggnadens yttre.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tjänst 5 -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card service-card shadow-sm p-4">
+
+                    <div class="service-icon">
+                        <i class="bi bi-hammer"></i>
+                    </div>
+
+                    <h3 class="h5">
+                        Snickeri
+                    </h3>
+
+                    <p class="text-muted">
+                        Måttanpassade lösningar och snickeriarbeten för både
+                        hem och företag.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tjänst 6 -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card service-card shadow-sm p-4">
+
+                    <div class="service-icon">
+                        <i class="bi bi-tools"></i>
+                    </div>
+
+                    <h3 class="h5">
+                        Reparation & underhåll
+                    </h3>
+
+                    <p class="text-muted">
+                        Vi hjälper dig med mindre reparationer och löpande
+                        underhåll för att hålla fastigheten i gott skick.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- OM OSS -->
+<section id="om-oss" class="section-padding bg-light">
+
+    <div class="container">
+
+        <div class="row g-5 align-items-center">
+
+            <div class="col-lg-6">
+
+                <img
+                    src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80"
+                    alt="Byggarbete"
+                    class="about-image"
+                    loading="lazy">
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <p class="text-uppercase fw-bold text-secondary mb-2">
+                    Om Bygg & Form
+                </p>
+
+                <h2 class="section-title">
+                    Ett byggföretag du kan känna dig trygg med
+                </h2>
+
+                <p>
+                    Bygg & Form är en fiktiv lokal byggfirma med fokus på
+                    kvalitet, service och personligt bemötande.
+                </p>
+
+                <p>
+                    Vi tror på tydliga offerter, raka besked och ett nära
+                    samarbete med kunden under hela projektet.
+                </p>
+
+                <div class="row mt-4">
+
+                    <div class="col-sm-6 mb-3">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        Kvalitetsarbete
+                    </div>
+
+                    <div class="col-sm-6 mb-3">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        Tydlig kommunikation
+                    </div>
+
+                    <div class="col-sm-6 mb-3">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        Personlig service
+                    </div>
+
+                    <div class="col-sm-6 mb-3">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        Noggrant hantverk
+                    </div>
+
+                </div>
+
+                <a href="#kontakt" class="btn btn-dark mt-3">
+                    Kontakta oss
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REFERENSER -->
+<section id="referenser" class="section-padding">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <h2 class="section-title">
+                Våra referenser
+            </h2>
+
+            <p class="section-intro">
+                Här är några exempel på projekt som visar bredden på
+                våra bygg- och renoveringstjänster.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Referens 1 -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card reference-card shadow-sm">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80"
+                        class="card-img-top"
+                        alt="Köksrenovering"
+                        loading="lazy">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="h5">
+                            Köksrenovering
+                        </h3>
+
+                        <p class="text-muted mb-0">
+                            En komplett renovering med nya ytskikt,
+                            smartare förvaring och modern design.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Referens 2 -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card reference-card shadow-sm">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+                        class="card-img-top"
+                        alt="Tillbyggnad av villa"
+                        loading="lazy">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="h5">
+                            Tillbyggnad
+                        </h3>
+
+                        <p class="text-muted mb-0">
+                            En tillbyggnad som gav familjen mer plats
+                            och ett extra rum för umgänge.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Referens 3 -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card reference-card shadow-sm">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80"
+                        class="card-img-top"
+                        alt="Altan"
+                        loading="lazy">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="h5">
+                            Ny altan
+                        </h3>
+
+                        <p class="text-muted mb-0">
+                            En rymlig och funktionell altan med plats
+                            för både matbord och loungedel.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="py-5 bg-dark text-white">
+
+    <div class="container text-center">
+
+        <h2 class="mb-3">
+            Dags att förverkliga ditt byggprojekt?
+        </h2>
+
+        <p class="lead mb-4">
+            Kontakta oss så pratar vi igenom dina idéer.
+        </p>
+
+        <a href="#kontakt" class="btn btn-light btn-lg">
+            Begär offert
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- KONTAKT -->
+<section id="kontakt" class="section-padding contact-section">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <h2 class="section-title">
+                Kontakta oss
+            </h2>
+
+            <p class="section-intro">
+                Har du ett byggprojekt på gång? Hör av dig så berättar
+                du vad du behöver hjälp med.
+            </p>
+
+        </div>
+
+
+        <div class="row g-5">
+
+            <!-- Kontaktinformation -->
+            <div class="col-lg-5">
+
+                <div class="card contact-box shadow-sm p-4 h-100">
+
+                    <h3 class="h4 mb-4">
+                        Bygg & Form
+                    </h3>
+
+                    <div class="d-flex mb-4">
+
+                        <i class="bi bi-geo-alt fs-4 me-3"></i>
+
+                        <div>
+                            <strong>Adress</strong>
+                            <p class="text-muted mb-0">
+                                Byggvägen 12<br>
+                                702 00 Örebro
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="d-flex mb-4">
+
+                        <i class="bi bi-telephone fs-4 me-3"></i>
+
+                        <div>
+                            <strong>Telefon</strong>
+                            <p class="text-muted mb-0">
+                                019-123 45 67
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="d-flex mb-4">
+
+                        <i class="bi bi-envelope fs-4 me-3"></i>
+
+                        <div>
+                            <strong>E-post</strong>
+                            <p class="text-muted mb-0">
+                                info@byggform.se
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="d-flex">
+
+                        <i class="bi bi-clock fs-4 me-3"></i>
+
+                        <div>
+                            <strong>Öppettider</strong>
+                            <p class="text-muted mb-0">
+                                Måndag–fredag<br>
+                                07:00–17:00
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Kontaktformulär -->
+            <div class="col-lg-7">
+
+                <div class="card contact-box shadow-sm p-4">
+
+                    <h3 class="h4 mb-4">
+                        Begär kostnadsfri offert
+                    </h3>
+
+                    <form>
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+
+                                <label for="name" class="form-label">
+                                    Namn
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Ditt namn"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label for="phone" class="form-label">
+                                    Telefon
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="070-123 45 67"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="email" class="form-label">
+                                    E-post
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    placeholder="din@email.se"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="service" class="form-label">
+                                    Vad behöver du hjälp med?
+                                </label>
+
+                                <select
+                                    class="form-select"
+                                    id="service"
+                                    name="service">
+
+                                    <option selected>
+                                        Välj tjänst
+                                    </option>
+
+                                    <option>
+                                        Renovering
+                                    </option>
+
+                                    <option>
+                                        Tillbyggnad
+                                    </option>
+
+                                    <option>
+                                        Altan / uterum
+                                    </option>
+
+                                    <option>
+                                        Fasad / tak
+                                    </option>
+
+                                    <option>
+                                        Snickeri
+                                    </option>
+
+                                    <option>
+                                        Annat
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="message" class="form-label">
+                                    Meddelande
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Beskriv gärna ditt projekt..."
+                                    required></textarea>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-dark btn-lg">
+
+                                    Skicka offertförfrågan
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="py-5">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-5">
+
+                <h3 class="h5">
+                    <i class="bi bi-building"></i>
+                    Bygg & Form
+                </h3>
+
+                <p class="text-secondary">
+                    Tryggt hantverk och personligt bemötande
+                    från idé till färdigt resultat.
+                </p>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <h4 class="h6">
+                    Snabblänkar
+                </h4>
+
+                <ul class="list-unstyled">
+
+                    <li class="mb-2">
+                        <a href="#hem">Hem</a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#tjanster">Tjänster</a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#om-oss">Om oss</a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#referenser">Referenser</a>
+                    </li>
+
+                    <li>
+                        <a href="#kontakt">Kontakt</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-6 col-lg-4">
+
+                <h4 class="h6">
+                    Kontakt
+                </h4>
+
+                <p class="text-secondary mb-1">
+                    019-123 45 67
+                </p>
+
+                <p class="text-secondary">
+                    info@byggform.se
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <hr class="border-secondary my-4">
+
+
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+
+            <p class="text-secondary mb-0">
+                © 2026 Bygg & Form. Alla rättigheter förbehållna.
+            </p>
+
+            <div>
+                <a href="#" class="me-3">
+                    Integritetspolicy
+                </a>
+
+                <a href="#">
+                    Cookies
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
